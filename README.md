@@ -1,81 +1,64 @@
-<!-- osa:header:start -->
+<div align="center">
+
 # OSA Share
 
-Simple temporary file hosting. Open alternative to **Google Drive (file links)**, part of the [Open Software Alliance](https://github.com/OpenSoftwareAlliance) suite.
+**Simple temporary file hosting.**
 
-| | |
-|---|---|
-| Upstream | [Uguu](https://github.com/nokonoko/Uguu), kept in sync with this repository |
-| License | GPL-3.0 |
+Open source alternative to **Google Drive (file links)**. Part of the [Open Software Alliance](https://github.com/OpenSoftwareAlliance) suite.
 
-Credit for the original work goes to the Uguu authors. Everything below this header is the upstream README.
+</div>
 
 ---
-<!-- osa:header:end -->
-# Uguu
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=nokonoko_Uguu&metric=alert_status)](https://sonarcloud.io/dashboard?id=nokonoko_Uguu)
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Documentation Status](https://docs.uguu.se/img/flat.svg)](https://docs.uguu.se)
-
-
-# What is Uguu?
-
-Uguu is a simple lightweight temporary file hosting and sharing platform, but can also be used as a permanent file host.
 
 ## Features
 
-- One click uploading, no registration required
-- A minimal, modern web interface
-- Drag & Drop & Paste supported
-- Upload API with multiple response choices
-  - JSON
-  - HTML
-  - Text
-  - CSV
-- Supports [ShareX](https://getsharex.com/) and other screenshot tools
+- One-click and drag-and-drop uploads, no registration
+- Temporary or permanent file links
+- File type and size limits, blacklists
+- API for scripts and ShareX
 
-### Demo
+## Tech stack
 
-See the real world site at [uguu.se](https://uguu.se).
+- **Current:** PHP, SQLite/MySQL/Postgres
+- **Target:** Next.js + TypeScript on Cloudflare Workers (see [migration research](https://github.com/OpenSoftwareAlliance/share/issues/2))
 
-## Requirements
+## Roadmap
 
-Tested and working with Nginx + PHP-8.0/8.1 + SQLite/MySQL. 
+- [Open source landscape research](https://github.com/OpenSoftwareAlliance/share/issues/1)
+- [Migration research: React/Next.js + TypeScript on Cloudflare Workers](https://github.com/OpenSoftwareAlliance/share/issues/2)
+- [All issues](https://github.com/OpenSoftwareAlliance/share/issues)
 
-Node is used to compile Uguu, after that it runs on PHP.
+## Self-hosting
 
-## Installation
+Installation and configuration follow the upstream project for now: see the [Uguu documentation](https://github.com/nokonoko/Uguu#readme).
 
-Installation and configuration can be found at [Uguu Documentation](https://docs.uguu.se).
+## The OSA suite
 
-If you need a admin panel check out [Moe Panel](https://git.pomf.se/Pomf/MoePanel).
+| Product | What it does | Alternative to |
+|---|---|---|
+| [OSA Pad](https://github.com/OpenSoftwareAlliance/pad) | Real-time collaborative document editor. | Google Docs |
+| [OSA Sheet](https://github.com/OpenSoftwareAlliance/sheet) | Online collaborative spreadsheet. | Google Sheets |
+| [OSA Cal](https://github.com/OpenSoftwareAlliance/cal) | Scheduling and booking pages. | Google Calendar (appointment schedules) |
+| [OSA Mail](https://github.com/OpenSoftwareAlliance/mail) | Email forwarding and hosting for custom domains. | Gmail |
+| [OSA Meet](https://github.com/OpenSoftwareAlliance/meet) | Secure peer-to-peer video meetings. | Google Meet |
+| [OSA Draw](https://github.com/OpenSoftwareAlliance/draw) | Infinite canvas whiteboard. | Google Drawings / Jamboard |
+| [OSA Drop](https://github.com/OpenSoftwareAlliance/drop) | Local file sharing in the browser. | Quick Share |
+| [OSA Share](https://github.com/OpenSoftwareAlliance/share) | Simple temporary file hosting. | Google Drive (file links) |
+| [OSA Share Admin](https://github.com/OpenSoftwareAlliance/share-admin) | Moderation panel for OSA Share. | Google Drive admin |
+| [OSA Bin](https://github.com/OpenSoftwareAlliance/bin) | Zero-knowledge encrypted pastebin. | Google Keep (secure notes) |
+| [OSA Snip](https://github.com/OpenSoftwareAlliance/snip) | Self-hosted code snippets and gists. | Google Keep (snippets) |
+| [OSA Short](https://github.com/OpenSoftwareAlliance/short) | URL shortener with analytics. | goo.gl |
+| [OSA Alias](https://github.com/OpenSoftwareAlliance/alias) | DNS-based domain redirection. | Google Domains forwarding |
+| [OSA Page](https://github.com/OpenSoftwareAlliance/page) | Link-in-bio pages. | Google Sites |
+| [OSA Feedback](https://github.com/OpenSoftwareAlliance/feedback) | Feedback boards and public roadmaps. | Google Forms (product feedback) |
+| [OSA Jam](https://github.com/OpenSoftwareAlliance/jam) | Live audio rooms. | Google Meet (audio) |
+| [OSA Micro](https://github.com/OpenSoftwareAlliance/micro) | Ready-to-use micro service APIs. | Google Cloud APIs |
+| [OSA Username](https://github.com/OpenSoftwareAlliance/username) | Check username availability on 100+ sites. | - |
+| [OSA Desktop](https://github.com/OpenSoftwareAlliance/osa-desktop) | Dynamic Island and menu bar toolkit for macOS. | - |
+| [OSA Status](https://github.com/OpenSoftwareAlliance/status) | Uptime monitor and status page for the OSA services. | - |
 
-## Docker
+## License and credits
 
-For Docker read [this guide](https://git.pomf.se/Pomf/uguu/wiki/Deploying-using-Docker).
+OSA Share is based on [Uguu](https://github.com/nokonoko/Uguu). Credit for the original work goes to its authors.
 
-## Getting help
-
-Hit me up at [@nekunekus](https://twitter.com/nekunekus) or email me at neku@pomf.se
-
-## Contributing
-
-We'd really like if you can take some time to make sure your coding style is
-consistent with the project. Uguu follows [PHP
-PSR-12](https://www.php-fig.org/psr/psr-12/) and [Airbnb JavaScript
-(ES5)](https://github.com/airbnb/javascript/tree/es5-deprecated/es5) (`airbnb/legacy`)
-coding style guides. We use ESLint and PHPCS tools to enforce these standards.
-
-You can also help by sending us feature requests or writing documentation and
-tests.
-
-The Uguu repo has changed home and now resides at [Pomf Git](https://git.pomf.se/Pomf/Uguu).
-
-## Credits
-
-Uguu is based on [Pomf](http://github.com/pomf/pomf) which was written by Emma Lejack & Go Johansson (nekunekus) and with help from the open source community.
-
-## License
-
-Uguu is free software, and is released under the terms of the GPL-3.0 license. See
-`LICENSE`.
+License: GPL-3.0. See the [LICENSE](LICENSE) file in this repository.
