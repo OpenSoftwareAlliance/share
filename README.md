@@ -1,3 +1,17 @@
+<!-- osa:header:start -->
+# OSA Share
+
+Simple temporary file hosting. Open alternative to **Google Drive (file links)**, part of the [Open Software Alliance](https://github.com/OpenSoftwareAlliance) suite.
+
+| | |
+|---|---|
+| Upstream | [Uguu](https://github.com/nokonoko/Uguu), kept in sync with this repository |
+| License | GPL-3.0 |
+
+Credit for the original work goes to the Uguu authors. Everything below this header is the upstream README.
+
+---
+<!-- osa:header:end -->
 # Uguu
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=nokonoko_Uguu&metric=alert_status)](https://sonarcloud.io/dashboard?id=nokonoko_Uguu)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
